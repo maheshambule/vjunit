@@ -1,5 +1,9 @@
 import argparse
-from vjunit.vjunit import VJunit
+try:
+    from vjunit.vjunit import VJunit
+except:  
+    # Fixes python2 import
+    from vjunit import VJunit
 
 
 def main():
